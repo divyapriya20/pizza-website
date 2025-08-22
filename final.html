@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dibhani's Pizzaria - Order Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/Dibhani-style.css" rel="stylesheet">
+    <style>
+        /* CSS Styling for the order form */
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:disabled {
+            background-color: #ccc;
+        }
+
+        .order-list {
+            margin-top: 30px;
+        }
+
+        .order-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            background-color: #fafafa;
+        }
+
+        .order-item h4 {
+            margin: 0 0 10px 0;
+        }
+
+        .order-item p {
+            margin: 5px 0;
+        }
+
+        .total-price {
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top box -->
+        <!-- Logo & Site Name -->
+        <div class="placeholder">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/main1.jpg">
+                <div class="tm-header">
+                    <div class="row tm-header-inner">
+                        <div class="col-md-6 col-12">
+                            <img src="img/logo2.png" alt="Logo" class="tm-site-logo" />
+                            <div class="tm-site-text-box">
+                                <h1 class="tm-site-title">Dibhani's Pizzaria</h1>
+                                <h6 class="tm-site-description">Pizza with best quality ingredients</h6>
+                            </div>
+                        </div>
+                        <nav class="col-md-6 col-12 tm-nav">
+                            <ul class="tm-nav-ul">
+                                <li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+                                <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+                                <li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+                                <li class="tm-nav-li"><a href="final.html" class="tm-nav-link active">Order</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order Form Section -->
+        <div class="form-container">
+            <h2>Place Your Order</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="4" required></textarea>
+                </div>
+                <div class="order-list" id="orderList">
+                    <!-- Items will be dynamically added here -->
+                </div>
+                <p class="total-price" id="totalPrice">Total: 0 Rs/-</p>
+                <button type="submit" class="btn">Submit Order</button>
+            </form>
+        </div>
+
+        <!-- Display Order Details Section -->
+        <div class="order-list" id="finalOrderDetails">
+            <!-- Final Order Details will be dynamically added here -->
+        </div>
+    </div>
+
+    <footer class="tm-footer text-center">
+        <p>&copy; 2024 Dibhani's Pizzaria</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const orderList = document.getElementById('orderList');
+            const totalPriceElement = document.getElementById('totalPrice');
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let total = 0;
+
+            cart.forEach(item => {
+                const orderItem = document.createElement('div');
+                orderItem.classList.add('order-item');
+                orderItem.innerHTML = `
+                    <h4>${item.name} (${item.size})</h4>
+                    <p>Price: ${item.price} Rs/-</p>
+                `;
+                orderList.appendChild(orderItem);
+                total += item.price;
+            });
+
+            totalPriceElement.textContent = `Total: ${total} Rs/-`;
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const address = document.getElementById('address').value;
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let total = 0;
+
+            const orderDetails = cart.map(item => {
+                total += item.price;
+                return `<li>${item.name} (${item.size}) - ${item.price} Rs/-</li>`;
+            }).join('');
+
+            const finalOrderDetails = document.getElementById('finalOrderDetails');
+            finalOrderDetails.innerHTML = `
+                <div class="order-item">
+                    <h4>${name}</h4>
+                    <p>Email: ${email}</p>
+                    <p>Address: ${address}</p>
+                    <p>Order Details:</p>
+                    <ul>
+                        ${orderDetails}
+                    </ul>
+                    <p class="total-price">Total: ${total} Rs/-</p>
+                </div>
+            `;
+
+            alert('Order submitted!');
+
+            // Here you can add the functionality to handle the form submission, e.g., sending the data to a server
+        });
+    </script>
+</body>
+</html>

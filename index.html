@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dibhani's pizzaria</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/Dibhani-style.css" rel="stylesheet" />
+</head>
+
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/main1.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/logo2.png" alt="Logo" class="tm-site-logo" /> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">dibhani's pizzaria</h1>
+								
+								<h6 class="tm-site-description">Pizza with best quality ingredients</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+								<li class="tm-nav-li"><a href="order.html" class="tm-nav-link">order</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Welcome to dibhani's pizzariaa!</h2>
+				<p class="col-12 text-center">At Dibhani's Pizzaria, we believe that every slice tells a story. Nestled in the heart of Hyderabad, our cozy and vibrant pizzeria offers an unforgettable dining experience where quality meets flavor.
+
+                   </p>
+			</header>
+			
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link active">veg</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">nonveg</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">extras</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">combos</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">drinks</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-veg" class="tm-gallery-page">
+					
+					
+						
+
+
+
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Gallery Item</title>
+                        <style>
+                            .tm-gallery-description .full-description {
+                                display: none;
+                            }
+                            .tm-gallery-description.expanded .full-description {
+                                display: inline;
+                            }
+                            .tm-gallery-description.expanded .short-description {
+                                display: none;
+                            }
+                            .tm-gallery-description .read-more {
+                                color: blue;
+                                cursor: pointer;
+                                text-decoration: underline;
+                            }
+                        </style>
+                    </head>
+                    <body>
+
+
+                        <article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        <figure>
+							<img src="img/gallery/marg.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">margherita</h4>
+                                <p class="tm-gallery-description">
+                                    <span class="short-description">flavorful margherita pizza made with juicy tomato sauce...</span>
+                                    <span class="full-description">flavorful margherita pizza made with juicy tomato sauce,basil and 100% mozarella cheese</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								
+                            <button onclick="addToCart('Margherita', 'Regular', 179)">Add Regular(179 rs/-)</button><br>
+                            <button onclick="addToCart('Margherita', 'Medium', 300)">Add Medium(300 rs/-)</button><br>
+                            <button onclick="addToCart('Margherita', 'Large', 500)">Add Large(500 rs/-)</button>
+                        </figcaption>
+                    </figure>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/cornpizza.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">corn & cheese overload</h4>
+                                <p class="tm-gallery-description">
+                                    <span class="short-description">the sweet corn pizza is a del...</span>
+                                    <span class="full-description">the sweet corn pizza is a delicious summer dinner! its topped with basil pesto,creamy ricotta and fresh juicy sweet corn</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                                
+								<button onclick="addToCart('corn &cheese overload', 'Regular', 200)">Add Regular(200 rs/-)</button>
+								<button onclick="addToCart('corn & cheese overload', 'Medium', 350)">Add Medium(350 rs/-)</button>
+								<button onclick="addToCart('corn & cheese overload', 'Large', 550)">Add Large(550 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/022.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">pepper panner pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">the ultimate favorite! pepper panner pizza made with fr...</span>
+                                    <span class="full-description">the ultimate favorite! pepper panner pizza made with fresh and soft panner with crispy capsicum and topped with spicy red pepper.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('pepper panner pizza', 'Regular', 379)">Add Regular(379 rs/-)</button>
+								<button onclick="addToCart('pepper panner pizza', 'Medium', 639)">Add Medium(639 rs/-)</button>
+								<button onclick="addToCart('pepper panner pizza', 'Large', 800)">Add Large(800 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/farm house.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">farmhouse pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description"> This delicious farmhouse pizza made with Delightful combination...</span>
+                                    <span class="full-description"> This delicious farmhouse pizza made with Delightful combination of onion,capsicum,tomoto and grilled mushroom is ultimate favorite!</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('farmhouse pizza', 'Regular', 259)">Add Regular(259 rs/-)</button>
+								<button onclick="addToCart('farmhouse pizza', 'Medium', 350)">Add Medium(350 rs/-)</button>
+								<button onclick="addToCart('farmhouse pizza', 'Large', 850)">Add Large(850 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/mexican1.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">loaded mexican pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">Flavourful mix of red capsicum,gr...</span>
+                                    <span class="full-description">Flavourful mix of red capsicum,green capsicum,jalapeno,onion,black olives,sweet corn and 100% mozarella cheese with a signature spice sprinkle</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('loaded mexican pizza', 'Regular', 319)">Add Regular(319 rs/-)</button>
+								<button onclick="addToCart('loaded mexican pizza', 'Medium', 569)">Add Medium(569 rs/-)</button>
+								<button onclick="addToCart('loaded mexican pizza', 'Large', 900)">Add Large(900 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/spinach.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">spinach pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">This scrumptious spinach pizza is crispy...</span>
+                                    <span class="full-description">This scrumptious spinach pizza is crispy on the edges and loaded with juicy garlicky spinach, creamy mozzarella, and tangy feta cheese. It's fresh, full of flavor, and absolutely delicious!</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('spinach pizza', 'Regular', 286)">Add Regular(286 rs/-)</button>
+								<button onclick="addToCart('spinach pizza', 'Medium', 480)">Add Medium(480 rs/-)</button>
+								<button onclick="addToCart('spinach pizza', 'Large', 950)">Add Large(950 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/cheese tom.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">cheese and tomato </h4>
+                                <p class="tm-gallery-description">
+                                    <span class="short-description">This pizza's  recipe is simplicity at it's bes...</span>
+                                    <span class="full-description">This pizza's  recipe is simplicity at it's best,combining sweet ripe tomatoes with beautiful aged cheese and creamy mozarella</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('cheese and tomato', 'Regular', 169)">Add Regular(169 rs/-)</button>
+								<button onclick="addToCart('cheese and tomato', 'Medium', 309)">Add Medium(309 rs/-)</button>
+								<button onclick="addToCart('cheese and tomato', 'Large', 500)">Add Large(500 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/panner makhani.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">panner makhani pizza</h4>
+								
+								<p class="tm-gallery-description">
+                                    <span class="short-description">This pizza is an amazing combinatio...</span>
+                                    <span class="full-description">This pizza is an amazing combination of pizza flavours,seasonings along with punjabi makhani gravy</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('paneer makhani pizza', 'Regular', 249)">Add Regular(249 rs/-)</button>
+								<button onclick="addToCart('paneer makhani pizza', 'Medium', 440)">Add Medium(440 rs/-)</button>
+								<button onclick="addToCart('panner makhani pizza', 'Large', 680)">Add Large(680 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+                </div> <!-- gallery page 1 -->
+                    
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-nonveg" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/chicken dominator.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">chicken Dominator</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">chicken Dominator is  true...</span>
+                                    <span class="full-description">chicken Dominator is true it's name as the king of chicken pizza's.one slice of this pizza with juicy meats can satiate your cravings and your hunger.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('chicken dominator', 'Regular', 319)">Add Regular(319 rs/-)</button>
+								<button onclick="addToCart('chicken dominator', 'Medium', 519)">Add Medium(519 rs/-)</button>
+								<button onclick="addToCart('chicken dominator', 'Large', 819)">Add Large(819 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/non veg supreme.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">non veg supreme</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">Bite into supreme delight of Bla...</span>
+                                    <span class="full-description">Bite into supreme delight of Black Olives,Onions,Grilled mushrooms,Pepper BBQ chicken,Peri Peri chicken and Grilled chicken</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('non veg supreme', 'Regular', 339)">Add Regular(339 rs/-)</button>
+								<button onclick="addToCart('non veg supreme', 'Medium', 539)">Add Medium(539 rs/-)</button>
+								<button onclick="addToCart('non veg supreme', 'Large', 939)">Add Large(939 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/pepperoni.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">chicken pepperoni pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">This Pepperoni pizza made with red on...</span>
+                                    <span class="full-description">This Pepperoni pizza made with red onion,tangy pizza sauce,and chicken pepperoni will ultimately satisfy your cravings!</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('chicken pepperoni pizza', 'Regular', 300)">Add Regular(300 rs/-)</button>
+								<button onclick="addToCart('chicken pepperoni pizza', 'Medium', 500)">Add Medium(500 rs/-)</button>
+								<button onclick="addToCart('chicken pepperoni pizza', 'Large', 1000)">Add Large(1000 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/kheema.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">dhabe da kheema</h4>
+								<p class="tm-gallery-description"></p>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">A flavorful pizza topped with spiced ...</span>
+                                    <span class="full-description">A flavorful pizza topped with spiced nutton mince,sliced onions,fusion sauce & melted mozarella cheese</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('dhabe da kheema', 'Regular', 255)">Add Regular(255 rs/-)</button>
+								<button onclick="addToCart('dhabe da kheema', 'Medium', 400)">Add Medium(400 rs/-)</button>
+								<button onclick="addToCart('dhabe da kheema', 'Large', 679)">Add Large(679 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/5 chicken feast.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">the 5 chicken feast pizza</h4>
+							
+								<p class="tm-gallery-description">
+                                    <span class="short-description">This 5 feast pizza is filled with grilled chi...</span>
+                                    <span class="full-description">This 5 feast pizza is filled with grilled chicken,chicken meatballs,chicken tikka,herby chicken sausage & flavoured chicken kheema</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('the 5 chicken feast pizza', 'Regular', 499)">Add Regular(499 rs/-)</button>
+								<button onclick="addToCart('the 5 chicken feast pizza', 'Medium', 699)">Add Medium(699 rs/-)</button>
+								<button onclick="addToCart('the 5 chicken feast pizza', 'Large', 1100)">Add Large(1100 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/sausage.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">chicken sausage pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">chicken sausage pizza for one red pep...</span>
+                                    <span class="full-description">chicken sausage pizza for one red peppers and spicy chicken sausage elevate your favorite comfort food with some extra heat.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('chicken sausage', 'Regular', 255)">Add Regular(255 rs/-)</button>
+								<button onclick="addToCart('chicekn sausage', 'Medium', 499)">Add Medium(499 rs/-)</button>
+								<button onclick="addToCart('chicken sausage', 'Large', 799)">Add Large(799 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 2 -->
+				
+				<!-- gallery page 3 -->
+				<div id="tm-gallery-page-extras" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/jalpeno.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">jalapeno poppers</h4>
+								
+                                <p class="tm-gallery-description">
+                                    <span class="short-description">jalapeno poppers with gooey white sauce...</span>
+                                    <span class="full-description">jalapeno poppers with gooey white sauce.(250 kcal/100g) contains cereals containing wheat,soya and milk products.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+				
+								<button onclick="addToCart('jalapeno poppers','one', 119)">add(119 rs/-)</button>
+								
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/bread.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">garlic breadsticks</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">crunch your way through our cheesy...</span>
+                                    <span class="full-description">crunch your way through our cheesy garlic sticks.[fat-11.3 per 100g,protein-7.6 per 100g,carbohydrate-44.9 per 100g,sugar-0.6 per 100g,calories-311.7k.cal]</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+								<button onclick="addToCart('garlic breadsticks','one', 140)">Add(140 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/taco.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">taco mexican</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">truly irresistable!crispy taco with non-veg...</span>
+                                    <span class="full-description">truly irresistable!crispy taco with non-veg patty and reamy harissa sauce.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('taco mexican','one', 169)">Add(169 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/fries.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">cheesy fries</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">baked crispy  fries seasoned with chee...</span>
+                                    <span class="full-description"> baked crispy fries seasoned with cheesy seasoning</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                             
+								<button onclick="addToCart('cheesy fries','one', 100)">Add(100 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/cheese dip.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">cheese dip </h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">a silky smooth cheese dip that doe...</span>
+                                    <span class="full-description">a silky smooth cheese dip that doesn't harden or congeal as it cools!</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                              
+								<button onclick="addToCart('cheese dip','one', 30)">Add(30 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/pasta.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">creamy pasta</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">pasta baked in flavorful sauce...</span>
+                                    <span class="full-description">pasta baked in falvourful sauce along with green capsicum,onion and red capsicum topped with 100% mozarella cheese & cheesy dressing</span>
+                            <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                                
+								<button onclick="addToCart('creamy pasta','one', 250)">Add(250 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+
+				</div> <!-- gallery page 3 -->
+				<!-- gallery page 4 -->
+				<div id="tm-gallery-page-combos" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/cdandmex.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">chicken dominator and non veg supreme pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">The best chicken pizza's together...</span>
+                                    <span class="full-description">the best chicken pizza's together at a discount of 10%</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                                
+								<button onclick="addToCart('chicken dominator and non veg supreme pizza','one', 599)">Add(599 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/mixed-pizza.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">cheesy tomato pizza and loaded mexican pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description"> this combo will ultimately satisfy all of y...</span>
+                                    <span class="full-description">this combo will ultimately satisfy all of your cravings!The creamy cheese filled tomato pizza with the best mexican taste pizza </span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('cheesy tomato and loaded mexican pizza','one', 650)">Add(650 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/mexandfh.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">mexican loaded and farmhouse pizza</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">The mouth watering veggie paradise can be experienced with this combo...</span>
+                                    <span class="full-description">The mouth watering veggie paradise can be experienced with this combo of mexican loaded with farmhouse pizza at a discount of 10%</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('mexican loaded and farmhouse pizza','one', 520)">Add(520 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/gcdpep.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">chicken dominator,garlicbread,pepsi</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">this crazy combination will complete...</span>
+                                    <span class="full-description">This crazy combination will completely satisy your hunger</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('chicken dominator,GarlicBread,pepsi','one', 500)">Add(500 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					
+				</div> <!-- gallery page 4 -->
+
+				<!-- gallery page 5 -->
+				<div id="tm-gallery-page-drinks" class="tm-gallery-page hidden">
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/pepsi475.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">pepsi 475ml</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">The best drink that shake th...</span>
+                                    <span class="full-description">The best drink that shake things up with its strong feel</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('pepsi','one', 50)">Add(50 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/7up.jpg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">7up 475ml</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">this is a delicious soft drink co...</span>
+                                    <span class="full-description">this is a delicious soft drink combines lemon and lime flavors with sparking bubbles.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                              
+								<button onclick="addToCart('7up','one', 50)">Add(50 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/mirinda.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">mirinda 475ml</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">strong  fizzy and very refreshing...</span>
+                                    <span class="full-description">strong fizzy and very refreshing..</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                              
+								<button onclick="addToCart('mirinda','one', 50)">Add(50 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/thumsup.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">thumbs up 475ml</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">This drink will truely...</span>
+                                    <span class="full-description">this drink will truely energizes you with every sip.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                              
+								<button onclick="addToCart('thumbs up','one', 50)">Add(50 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/lavacake.jpeg" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">lavacake</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">you will fall in love with this chcoc lava cake...</span>
+                                    <span class="full-description">you will fall in love with this choco lava ckae with its rich molten chocolate center.</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('lavacake','one', 150)">Add(150 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+						<figure>
+							<img src="img/gallery/milkshake.jfif" alt="Image" class="img-fluid tm-gallery-img" />
+							<figcaption>
+								<h4 class="tm-gallery-title">milkshake</h4>
+								<p class="tm-gallery-description">
+                                    <span class="short-description">the nutella blends smooth...</span>
+                                    <span class="full-description">the nutella blends smooth with the ice cream and milk and gives you a creamy,not icy milkshake that is just thick enough</span>
+                                    <a href="javascript:void(0);" class="read-more" onclick="toggleDescription(this)">Read More</a>
+                                </p>
+                               
+								<button onclick="addToCart('milkshake','one', 250)">Add(250 rs/-)</button>
+							</figcaption>
+						</figure>
+					</article>
+				</div> <!-- gallery page 5 -->
+				
+
+                <script>
+                    function toggleDescription(element) {
+    var description = element.parentElement;
+    var fullDescription = description.querySelector('.full-description');
+    var readMoreBtn = description.querySelector('.read-more');
+
+    if (fullDescription.style.display === "none") {
+        fullDescription.style.display = "inline"; // or "block" depending on your styling
+        readMoreBtn.textContent = "Read Less";
+    } else {
+        fullDescription.style.display = "none";
+        readMoreBtn.textContent = "Read More";
+    }
+}
+
+                </script>
+				<script>
+					// Function to toggle description (if needed)
+					function toggleDescription(element) {
+						// Implement your toggle logic if needed
+					}
+				
+					document.addEventListener('DOMContentLoaded', function() {
+						const addToOrderButtons = document.querySelectorAll('.add-to-order');
+				
+						addToOrderButtons.forEach(button => {
+							button.addEventListener('click', function() {
+								const itemName = this.dataset.name;
+								const itemPrice = parseInt(this.dataset.price);
+				
+								const item = {
+									name: itemName,
+									price: itemPrice
+								};
+				
+								let order = JSON.parse(localStorage.getItem('order')) || [];
+								order.push(item);
+								localStorage.setItem('order', JSON.stringify(order));
+				
+								alert(`${itemName} added to your order.`);
+							});
+						});
+					});
+				</script>
+
+
+
+
+
+
+
+<script>
+	function addToCart(name, size, price) {
+		let cart = JSON.parse(localStorage.getItem('cart')) || [];
+		cart.push({ name, size, price });
+		localStorage.setItem('cart', JSON.stringify(cart));
+		alert('Item added to cart!');
+	}
+</script>
+
+
+
+
+
+				
+            </body>
+            </html>
+			</div>
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/img-01.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h4 class="tm-gallery-title">join us</h4>
+							<p class="tm-mb-45">Join us at Dibhani's Pizzaria, where every meal is a celebration of flavors. We invite you to sit back, relax, and enjoy a slice of heaven with us.</p>
+							<h4 class="tm-gallery-title">A place for everyone</h4>
+							<p class="tm-mb-45">Our welcoming atmosphere is perfect for any occasion, whether it’s a family dinner, a casual lunch with friends, or a romantic date night. We also offer convenient take-out and delivery services, bringing the Dibhani’s experience right to your doorstep.</p>
+                            <a href="about.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2024 dibhani's pizzaria 
+            
+            | 
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

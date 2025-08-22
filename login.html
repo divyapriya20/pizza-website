@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Sign Up</title>
+    <style>
+        body {
+            background-color: #dddddd; /* slightly darker grey background */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #f0f0f0; /* lighter grey background for the login box */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"],
+        .login-container input[type="email"],
+        .login-container input[type="tel"],
+        .login-container textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-container input[type="submit"] {
+            background-color: #552f1a; /* green submit button */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #77391e; /* darker green on hover */
+        }
+        .login-container .switch {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .login-container .switch a {
+            color: #4e2918; /* green text for switch links */
+            text-decoration: none;
+        }
+        .login-container .switch a:hover {
+            text-decoration: underline;
+        }
+        .signup-form {
+            display: none; /* initially hidden */
+        }
+    </style>
+    <script>
+        function toggleForm() {
+            var loginForm = document.getElementById("loginForm");
+            var signupForm = document.getElementById("signupForm");
+            if (loginForm.style.display === "block") {
+                loginForm.style.display = "none";
+                signupForm.style.display = "block";
+            } else {
+                loginForm.style.display = "block";
+                signupForm.style.display = "none";
+            }
+        }
+
+        function login(event) {
+            event.preventDefault();
+            var username = document.getElementById("loginUsername").value;
+            var password = document.getElementById("loginPassword").value;
+            
+            // Simulate successful login
+            if (username === "1234" && password === "1234") {
+                window.location.href = "index.html"; // Redirect to welcome page on successful login
+                // Add your reference link here for successful login redirection
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+
+        function signup(event) {
+            event.preventDefault();
+            var email = document.getElementById("signupEmail").value;
+            var name = document.getElementById("signupName").value;
+            var phone = document.getElementById("signupPhone").value;
+            var address = document.getElementById("signupAddress").value;
+            var password = document.getElementById("signupPassword").value;
+
+            // Simulate successful signup
+            alert("Account created successfully");
+            window.location.href = "index.html"; // Redirect to welcome page on successful signup
+            // Add your reference link here for successful signup redirection
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <div id="loginForm" style="display: block;">
+            <h2>Login to Your Account</h2>
+            <form onsubmit="login(event)">
+                <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required>
+                <br>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required>
+                <br>
+                <label><input type="checkbox" id="saveCredentials"> Remember Me</label>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+            <div class="switch">
+                <p>Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Sign Up</a></p>
+                <p>Go to <a href="home.html">Home Page</a></p>
+            </div>
+        </div>
+        <div id="signupForm" class="signup-form">
+            <h2>Create an Account</h2>
+            <form onsubmit="signup(event)">
+                <input type="email" id="signupEmail" name="signupEmail" placeholder="Email" required>
+                <br>
+                <input type="text" id="signupName" name="signupName" placeholder="Full Name" required>
+                <br>
+                <input type="tel" id="signupPhone" name="signupPhone" placeholder="Phone Number" required>
+                <br>
+                <textarea id="signupAddress" name="signupAddress" placeholder="Address" required></textarea>
+                <br>
+                <input type="password" id="signupPassword" name="signupPassword" placeholder="Create Password" required>
+                <br>
+                <input type="submit" value="Sign Up">
+            </form>
+            <div class="switch">
+                <p>Already have an account? <a href="javascript:void(0);" onclick="toggleForm()">Login</a></p>
+                <p>Go to <a href="home.html">Home Page</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
